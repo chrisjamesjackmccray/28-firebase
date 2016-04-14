@@ -1,4 +1,4 @@
-class todosController
-constructor($firebaseObject,) {
-  
-}
+class FireTestController
+  constructer() {
+    
+  }
