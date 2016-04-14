@@ -4,3 +4,13 @@
 @import "layout";
 @import "modules";
 @import "state";
+
+.picked {
+  text-decoration: line-through;
+  color: red;
+}
+
+.sub {
+  width: 400px;
+  height: 30px;
+}
