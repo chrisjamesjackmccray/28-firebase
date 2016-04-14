@@ -19,11 +19,7 @@ class FireTestController {
   }
 
   delete(item) {
-		this._$http
-		.delete(`https://jmtodos.firebaseio.com/list${this.item}`)
-		.then((response) => {
-			this.list.splice(this.list.indexOf(list), 1);
-		});
+    this.list.$remove(item);
   }
 
 }

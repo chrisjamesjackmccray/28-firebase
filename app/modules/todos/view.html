@@ -8,18 +8,16 @@
      <input class="sub" type="text" placeholder="Pick your todo" ng-model="todosCtrl.item">
 
     <input type="submit" value="Add todo">
+    
+
 
   </form>
 
     <ul>
-      <li ng-repeat="item in todosCtrl.list" ng-class="{ 'picked': item.picked }" ng-click="todosCtrl.togglepicked(item)">
-        {{ item.name }}
+      <li class="answerbox" ng-repeat="todo in todosCtrl.list" ng-class="{ 'picked': todo.picked }">
+        <span class="todotext" ng-click="todosCtrl.togglepicked(todo)">{{ todo.name }}</span>
+        <i class="fa fa-times-circle" ng-click="todosCtrl.delete(todo)"></i>
       </li>
-
-      <li class="ex">
-        <i class="fa fa-times-circle" ng-click="todosCtrl.delete(list)"></i>
-      </li>
-
     </ul>
   </div>
 </div>

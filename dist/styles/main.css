@@ -1,6 +1,6 @@
 .picked {
   text-decoration: line-through;
-  color: red; }
+  color: black; }
 
 .sub {
   width: 200px;
@@ -8,12 +8,26 @@
 
 .listsection {
   width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 2px solid gray; }
 
 .title {
-  font-size: 3rem;
-  text-align: center; }
+  font-size: 4rem;
+  text-align: center;
+  color: #313131; }
 
 .thetodos {
   width: 400px;
   margin: 0 0 0 280px; }
+
+.todotext {
+  font-size: 3rem;
+  color: #313131; }
+
+.answerbox {
+  margin: 0 0 0 -100px; }
+
+.fa.fa-times-circle {
+  font-size: 2rem;
+  color: #878787;
+  margin: 0 0 0 20px; }
