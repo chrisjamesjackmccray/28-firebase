@@ -1,6 +1,6 @@
 function config($stateProvider) {
   $stateProvider
-  .state('homepage', {
+  .state('todolist', {
    controller: "todosController as todosCtrl",
    url: "/",
    template: require('./view.html')
