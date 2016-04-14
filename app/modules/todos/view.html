@@ -1,7 +1,9 @@
 
-<div>
-  <h1> Todo List </h1>
+<div class="listsection">
+  <h1 class="title"> Todo List </h1>
 
+
+<div class="thetodos">
   <form ng-submit="todosCtrl.addToList()">
      <input class="sub" type="text" placeholder="Pick your todo" ng-model="todosCtrl.item">
 
@@ -9,10 +11,15 @@
 
   </form>
 
-  <ul>
-    <li ng-repeat="item in todosCtrl.list" ng-class="{ 'picked': item.picked }" ng-click="todosCtrl.togglepicked(item)">
-      {{ item.name }}
-    </li>
+    <ul>
+      <li ng-repeat="item in todosCtrl.list" ng-class="{ 'picked': item.picked }" ng-click="todosCtrl.togglepicked(item)">
+        {{ item.name }}
+      </li>
 
-  </ul>
+      <li class="ex">
+        <i class="fa fa-times-circle" ng-click="todosCtrl.delete(list)"></i>
+      </li>
+
+    </ul>
+  </div>
 </div>

@@ -3,5 +3,17 @@
   color: red; }
 
 .sub {
+  width: 200px;
+  height: 20px; }
+
+.listsection {
+  width: 800px;
+  margin: 0 auto; }
+
+.title {
+  font-size: 3rem;
+  text-align: center; }
+
+.thetodos {
   width: 400px;
-  height: 30px; }
+  margin: 0 0 0 280px; }
