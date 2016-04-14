@@ -5,3 +5,10 @@
   <input type="submit" value="Add todo">
 
 </form>
+
+<ul>
+  <li ng-repeat="item in todosCtrl.list" ng-class="{ 'picked': item.picked }" ng-click="todosCtrl.togglepicked(item)">
+    {{ item.name }}
+  </li>
+
+</ul>
