@@ -31,3 +31,6 @@
   font-size: 2rem;
   color: #878787;
   margin: 0 0 0 20px; }
+
+.fa.fa-times-circle:hover {
+  color: #595858; }
